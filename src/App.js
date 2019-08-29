@@ -8,7 +8,7 @@ class App extends Component {
       <div>
         <Header />
         <Home />
-        <Footer/>
+        <Footer />
       </div>
     )
   }

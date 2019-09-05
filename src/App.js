@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Header from './Components/Shared/Header'
-import Footer from './Components/Shared/Footer'
-import Home from './Components/Home'
+import Header from './Shared/Header'
+import Footer from './Shared/Footer'
+import Home from './Home'
 class App extends Component {
   render() {
     return (

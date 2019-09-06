@@ -10,7 +10,7 @@ function Footer(props) {
     return (
         <footer>
             <Paper elevation={1}>
-                <Typography variant="h5" component="h3">
+                <Typography component="p" >
                     Sandwitch Maker App
         </Typography>
                 <Typography component="p">

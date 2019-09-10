@@ -7,13 +7,21 @@ const burger = props => {
   // .map(igKey =>{
 
   // });
+  const ingredients = (a,b) =>{
+    let ingredientList =[];
+    for (let i =0; i<=b; i++){
+      ingredientList.push(<BurgerIngredient type={a} />) 
+    }
+    return ingredientList;
+  }
+  const transformedIngredients = Object.entries(props.ingredients)
+        .map(item => ingredients(...item));
+
+ 
   return (
     <div className={classes.Burger}>
       <BurgerIngredient type="bread-top" />
-      <BurgerIngredient type="cheese" />
-      <BurgerIngredient type="meat" />
-      <BurgerIngredient type="bacon" />
-      <BurgerIngredient type="salad" />
+      {transformedIngredients}
       <BurgerIngredient type="bread-bottom" />
     </div>
   );

@@ -82,7 +82,7 @@ class BurgerBuilder extends Component {
         // {salad: true, meat: false, ...}
         return (
             <>
-            <Modal>
+            <Modal show={this.state.purchasing}>
             <OrderSummary ingredients={this.state.ingredients}/>
                 </Modal>
                 <Burger ingredients={this.state.ingredients} />
